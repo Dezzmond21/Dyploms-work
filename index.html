@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width/2, initial-scale= 1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <title>Pixelization Gallery</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <div style="text-align:center">
+        <h1>Галерея з можливістю пікселізації зображень</h1>
+      </div>
+
+      <div class="pixelizator__block">
+
+        <p class="optional__text">Пікселізація<input type="range" min="2" max="100" value="32" id="rangeCircle" />
+          <span id="outputCircle">2</span>
+          <select name="select" id="pixelizatorChange">
+            <option selected value="square">square</option>
+            <option value="circle">circle</option>
+            <option value="diamond">diamond</option>
+          </select>
+        </p>
+
+        <div>
+          <form action="" class="form__photo_loader">
+            <input type="file" id="fileCircle" />
+            <img src="" id="imageC" style="max-width: 600px;" />
+          </form>
+        </div>
+
+      </div>
+
+      <div class="sliderbig">
+        <div class="sliderbig__item">
+          <img data-lazy="img/BigSlider1.jpg" alt="">
+        </div>
+        <div class="sliderbig__item">
+          <img data-lazy="img/BigSlider2.jpg" alt="">
+        </div>
+        <div class=" sliderbig__item">
+          <img data-lazy="img/BigSlider3.jpg" alt="">
+        </div>
+        <div class=" sliderbig__item">
+          <img data-lazy="img/BigSlider4.jpg" alt="">
+        </div>
+        <div class=" sliderbig__item">
+          <img data-lazy="img/BigSlider5.jpg" alt="">
+        </div>
+      </div>
+      <div class=" slider">
+        <div class="slider__item">
+          <img src="img/Slider1.jpg" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="img/Slider2.jpg" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="img/Slider3.jpg" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="img/Slider4.jpg" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="img/Slider5.jpg" alt="">
+        </div>
+      </div>
+
+      <a href="/#" class="js-add-slide">Додати зображення </a>
+      <a href="/#" class="js-remove-slide">Видалити зображення</a>
+
+    </div>
+    <div class="footer"> Copyright 2021</div>
+  </div>
+
+  <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/close-pixelate.js"></script>
+  <script src="js/scriptPixeliz.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+
+</html>
